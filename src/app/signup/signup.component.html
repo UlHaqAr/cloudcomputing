@@ -1,0 +1,58 @@
+<div class="login-form">
+  <mat-card class="example-card">
+      <mat-card-header>
+          <mat-card-title>Sign-up user : </mat-card-title>
+      </mat-card-header>
+      <p></p>
+      <mat-card-content>
+          <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="User Name" [(ngModel)]="userName" name="userName" required>
+                      <mat-hint align="end">Give a username</mat-hint>
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Full Name" [(ngModel)]="fullName" name="fullName" required>
+                    <mat-hint align="end">Full name</mat-hint>
+                    </mat-form-field>
+                </td>
+            </tr>
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Password" [(ngModel)]="password" name="password" required>
+                      <mat-hint align="end">Give password for the user</mat-hint>
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Phone Number" [(ngModel)]="mobileNumber" name="mobileNumber" required>
+                      <mat-hint align="end">Give phone number</mat-hint>
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Pin Code" [(ngModel)]="pincode" name="pincode" required>
+                      <mat-hint align="end">Address pin code</mat-hint>
+                      </mat-form-field>
+                  </td>
+              </tr>
+          </table>
+          </form>
+      </mat-card-content>
+      <mat-card-actions>
+          <button mat-raised-button (click)="add()" color="primary">Add</button>
+          <!-- <button mat-raised-button (click)="add1()" color="primary">Get</button> -->
+      </mat-card-actions>
+  </mat-card>
+</div>
